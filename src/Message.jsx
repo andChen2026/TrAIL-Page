@@ -3,7 +3,7 @@ function message(content) {
    const structure = content ;
    const ret = (
       <div className="content">
-         <p className="text-msg">dhsjdhjshdx</p>
+         <p className="text-msg">{content}</p>
       </div>
    );
    return ret;

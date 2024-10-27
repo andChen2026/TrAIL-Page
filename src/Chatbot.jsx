@@ -6,7 +6,7 @@ export function ChatBot() {
    const [input, setInput] = useState("");
    const [isLoading, setIsLoading] = useState(false);
 
-   const handleSubmit = async (e) => {
+   const handleSubmit = async (e) => { // Rewrite Handle to Add Messages to List
       
    };
 

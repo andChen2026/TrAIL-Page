@@ -1,11 +1,9 @@
 import "./Message.css";
-function message(content, sender) {
-   const structure = { image, content };
-   const image = sender == "user" ? "user" : "gemini";
+function message(content) {
+   const structure = content ;
    const ret = (
       <div className="content">
-         <img src="./images/{image}.png" className="pfp" alt="" />
-         <p className="text-msg"></p>
+         <p className="text-msg">dhsjdhjshdx</p>
       </div>
    );
    return ret;

@@ -1,11 +1,10 @@
+import React from "react";
 import "./Message.css";
-function message({ content} ) {
-   const structure = content ;
-   const ret = (
+function Message({ content} ) {
+   return (
       <div className="content">
          <p className="text-msg">{content}</p>
       </div>
    );
-   return ret;
 }
-export default message;
+export default Message;

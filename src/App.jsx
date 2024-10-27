@@ -4,7 +4,6 @@ import { ChatBot } from "./Chatbot"
 function App() {
   return (
     <div className="outer-wrapper" style={{
-      minHeight: '70vh',
       maxHeight: '100vh',
       display: 'flex',
       alignItems: 'center',

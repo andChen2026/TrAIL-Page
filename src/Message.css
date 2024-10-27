@@ -2,6 +2,8 @@
     background-color: grey;
     border: 1px solid white;
     border-radius: 10pt;
+    height: 50px;
+    width: auto;
 }
 .text-msg{
     color: white;

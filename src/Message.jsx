@@ -1,5 +1,5 @@
 import "./Message.css";
-function message(content) {
+function message({ content} ) {
    const structure = content ;
    const ret = (
       <div className="content">

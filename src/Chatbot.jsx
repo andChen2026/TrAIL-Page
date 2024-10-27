@@ -3,16 +3,16 @@ import "./index.css";
 import Message from "./Message";
 
 export function ChatBot() {
-   const [input, setInput] = useState("");
-   const [isLoading, setIsLoading] = useState(false);
-   const [messages, setMessages] = useState([]);
+   const [input, setInput] = useState(""); // State of the input
+   const [isLoading, setIsLoading] = useState(false); // State of loading
+   const [messages, setMessages] = useState([]); // State of messages
 
    const handleSubmit = async (e) => {
       e.preventDefault();
       if (input.trim() === "") return;
 
       setIsLoading(true);
-      setMessages([...messages, input]);
+      setMessages([...messages, {content: input}]);
       setInput("");
       setIsLoading(false);
    };

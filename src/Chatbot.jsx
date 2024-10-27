@@ -7,31 +7,7 @@ export function ChatBot() {
    const [isLoading, setIsLoading] = useState(false);
 
    const handleSubmit = async (e) => {
-      e.preventDefault();
-      if (!input.trim()) return;
-
-      setMessages((prev) => [...prev, { role: "user", content: input }]);
-      setInput("");
-      setIsLoading(true);
-
-      // Simulating API call
-      try {
-         const response = await fetch("https://api.example.com/chat", {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ message: input }),
-         });
-         const data = await response.json();
-         setMessages((prev) => [...prev, { role: "bot", content: data.reply }]);
-      } catch (error) {
-         console.error("Error:", error);
-         setMessages((prev) => [
-            ...prev,
-            { role: "bot", content: "Sorry, I encountered an error." },
-         ]);
-      } finally {
-         setIsLoading(false);
-      }
+      
    };
 
    return (

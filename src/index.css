@@ -38,7 +38,7 @@ h1 {
 button {
   /* border-radius: 8px; */
   border: none;
-   border-left: 1px solid white; 
+  border-left: 1px solid white; 
   border-radius: 0pt 20pt 20pt 0pt;
   padding: 7% 10% 6% 10%;
   font-size: 1em;
@@ -47,7 +47,7 @@ button {
   background-color: #1a1a1a;
   cursor: pointer;
   transition: border-color 0.25s;
-  float: left;
+  float: right;
   margin-right: -143%;
   margin-bottom: 5%;
   display: inline;
